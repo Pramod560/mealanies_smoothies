@@ -12,6 +12,22 @@ st.write(
     """
 )
 
+# Models & Technologies Information
+with st.expander("ℹ️ Models & Technologies Used"):
+    st.write("### Data Models & APIs")
+    st.write("**Database Model:** Snowflake Data Warehouse")
+    st.write("- `smoothies.public.fruit_options` - Available fruits and search terms")
+    st.write("- `smoothies.public.orders` - Customer orders and fulfillment status")
+    
+    st.write("**External API Model:** SmoothieFroot Nutrition API")
+    st.write("- Provides detailed nutrition information for each fruit")
+    st.write("- Endpoint: `https://my.smoothiefroot.com/api/fruit/`")
+    
+    st.write("### Technology Stack")
+    st.write("**Frontend:** Streamlit Web Framework")
+    st.write("**Data Processing:** Pandas + Snowflake Snowpark")
+    st.write("**Database:** Snowflake Cloud Data Platform")
+
 name_on_order= st.text_input("Name on Smoothie")
 st.write("The name on your smoothie will be: ", name_on_order)
 

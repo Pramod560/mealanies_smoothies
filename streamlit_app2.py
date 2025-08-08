@@ -9,6 +9,19 @@ st.write(
     """
 )
 
+# Models & Technologies Information
+with st.expander("ℹ️ Models & Technologies Used"):
+    st.write("### Data Models")
+    st.write("**Database Model:** Snowflake Data Warehouse")
+    st.write("- `smoothies.public.orders` - Customer orders with fulfillment tracking")
+    st.write("- Order status managed through `order_filled` field")
+    
+    st.write("### Technology Stack")
+    st.write("**Frontend:** Streamlit Web Framework")
+    st.write("**Data Processing:** Pandas + Snowflake Snowpark")
+    st.write("**Database:** Snowflake Cloud Data Platform")
+    st.write("**Order Management:** Real-time order status updates")
+
 #session = get_active_session()
 cnx = st.connection('snowflake')
 session  = cnx.session()
